@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+body {
+  background-color: #000010;
+  color: #ffffff;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec-mv {
+  position: relative;
+  height: 100vh;
+}
+
+.sec-mv .mv-blk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+.sec-mv .mv-blk h1 {
+  font-size: 80px;
+}
+
+.sec-mv .mv-blk hr {
+  width: 70vw;
+  margin: 0 auto;
+  border: 1px solid #e83951;
+}
+
+.sec-mv .mv-blk h2 {
+  padding-top: 16px;
+  font-size: 40px;
+}
+
+.sec-mv .mv-blk h2 span {
+  color: #e83951;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.sec-mv .ico-down_arrow_blk {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ico-down_arrow {
+  width: 40px;
+  color: #ffffff;
+}
+
+#ico-element,
+#ico-email,
+#ico-git,
+#ico-linkedin,
+#ico-mastodon,
+#ico-signal,
+#ico-telegram,
+#ico-x {
+  width: 60px;
+  color: #ffffff;
+}
+
+#ico-element:hover {
+  color: #0dbd8b;
+}
+
+#ico-email:hover {
+  color: #808080;
+}
+
+#ico-git:hover {
+  color: #f03c2e;
+}
+
+#ico-linkedin:hover {
+  color: #0077b5;
+}
+
+#ico-mastodon:hover {
+  color: #6364ff;
+}
+
+#ico-signal:hover {
+  color: #3A76F0;
+}
+
+#ico-telegram:hover {
+  color: #2aabee;
+}
+
+#ico-x:hover {
+  color: #1d9bf0;
+}
+
+.sec-scnd {
+  position: relative;
+  height: 100vh;
+}
+
+.sec-scnd .scl h2,
+.sec-scnd .contact h2 {
+  color: #e83951;
+  font-size: 40px;
+}
+
+.sec-scnd .scl {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-scnd .contact {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-scnd .scl ul,
+.sec-scnd .contact ul {
+  width: max-content;
+}
+
+.sec-scnd .divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80vh;
+  border: 1px solid #e83951;
+  transform: translate(-50%, -50%);
+}
+
+.sec-scnd li {
+  float: left;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.sec-scnd li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767.9px) {
+  .sec-mv .mv-blk h1 {
+    font-size: 60px;
+  }
+
+  .sec-mv .mv-blk h2 {
+    font-size: 30px;
+  }
+
+  #ico-element,
+  #ico-email,
+  #ico-git,
+  #ico-linkedin,
+  #ico-mastodon,
+  #ico-signal,
+  #ico-telegram,
+  #ico-x {
+    width: 40px;
+  }
+
+  .sec-scnd .scl h2,
+  .sec-scnd .contact h2 {
+    font-size: 30px;
+  }
+
+  .sec-scnd .scl {
+    top: 25%;
+    left: 50%;
+  }
+
+  .sec-scnd .contact {
+    top: 75%;
+    left: 50%;
+  }
+
+  .sec-scnd .divider {
+    width: 80vw;
+    height: 0;
+  }
+}
